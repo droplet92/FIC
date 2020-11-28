@@ -48,6 +48,18 @@
     <ClInclude Include="src\Component\Button.h">
       <Filter>헤더 파일\Component</Filter>
     </ClInclude>
+    <ClInclude Include="src\GameScene\IntroScene.h">
+      <Filter>헤더 파일\GameScene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameScene\PlayingScene.h">
+      <Filter>헤더 파일\GameScene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameScene\OutroScene.h">
+      <Filter>헤더 파일\GameScene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameScene\GameScenes.h">
+      <Filter>헤더 파일\GameScene</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Game.cpp">
@@ -70,6 +82,15 @@
     </ClCompile>
     <ClCompile Include="src\Component\Button.cpp">
       <Filter>소스 파일\Component</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameScene\IntroScene.cpp">
+      <Filter>소스 파일\GameScene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameScene\PlayingScene.cpp">
+      <Filter>소스 파일\GameScene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameScene\OutroScene.cpp">
+      <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

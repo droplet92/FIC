@@ -1,19 +1,21 @@
 #include "Game.h"
 #include "Window.h"
 #include "GameObject.h"
+#include "GameScene/GameScene.h"
+#include "GameScene/GameScenes.h"
 
 namespace FIC
 {
 	struct Game::Impl
 	{
-		GameObject* root;
+		GameObject* root = new GameObject();
+		GameScene& scene = titleScene;
 		Window window;
 	};
 
 	Game::Game()
 		: pImpl(std::make_unique<Game::Impl>())
 	{
-		pImpl->root = new GameObject();
 	}
 
 	Game::~Game() = default;

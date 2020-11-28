@@ -23,6 +23,10 @@
     <ClInclude Include="src\Game.h" />
     <ClInclude Include="src\GameObject.h" />
     <ClInclude Include="src\GameScene\GameScene.h" />
+    <ClInclude Include="src\GameScene\GameScenes.h" />
+    <ClInclude Include="src\GameScene\IntroScene.h" />
+    <ClInclude Include="src\GameScene\OutroScene.h" />
+    <ClInclude Include="src\GameScene\PlayingScene.h" />
     <ClInclude Include="src\GameScene\TitleScene.h" />
     <ClInclude Include="src\TextureManager.h" />
     <ClInclude Include="src\Window.h" />
@@ -32,6 +36,9 @@
     <ClCompile Include="src\Game.cpp" />
     <ClCompile Include="src\GameObject.cpp" />
     <ClCompile Include="src\GameScene\GameScene.cpp" />
+    <ClCompile Include="src\GameScene\IntroScene.cpp" />
+    <ClCompile Include="src\GameScene\OutroScene.cpp" />
+    <ClCompile Include="src\GameScene\PlayingScene.cpp" />
     <ClCompile Include="src\GameScene\TitleScene.cpp" />
     <ClCompile Include="src\main.cpp" />
     <ClCompile Include="src\Window.cpp" />

@@ -2,6 +2,10 @@
 
 namespace FIC
 {
+	GameScene::~GameScene()
+	{
+	}
+
 	void GameScene::changeScene(Game& game)
 	{
 		//game.setGameScene();

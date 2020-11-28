@@ -4,11 +4,11 @@
 
 namespace FIC
 {
-	class TitleScene : public GameScene
+	class PlayingScene : public GameScene
 	{
 	public:
-		TitleScene();
-		~TitleScene() final;
+		PlayingScene();
+		~PlayingScene() final;
 
 	private:
 		struct Impl;
