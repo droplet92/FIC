@@ -5,22 +5,27 @@
 
 namespace FIC
 {
-	constexpr unsigned int windowWidth = 800;
-	constexpr unsigned int windowHeight = 600;
+	constexpr unsigned int windowWidth = 1920;
+	constexpr unsigned int windowHeight = 1080;
 	const sf::VideoMode Window::windowVideoMode = { windowWidth, windowHeight };
 	const std::string Window::windowTitle = "FIC";
 
 	struct Window::Impl
 	{
-		sf::RenderWindow window{ windowVideoMode, windowTitle };
+		sf::RenderWindow window{ windowVideoMode, windowTitle, sf::Style::Fullscreen };
 	};
 
 	Window::Window()
-		: pImpl(std::make_unique<Window::Impl>())
+		: pImpl(new Impl)
 	{
 	}
 
 	Window::~Window() = default;
+
+	bool Window::isOpen() const
+	{
+		return pImpl->window.isOpen();
+	}
 
 	void Window::draw(const GameObject& object) const
 	{
@@ -35,5 +40,15 @@ namespace FIC
 	void Window::display() const
 	{
 		pImpl->window.display();
+	}
+
+	bool Window::pollEvent(sf::Event& event)
+	{
+		return pImpl->window.pollEvent(event);
+	}
+
+	void Window::close() const
+	{
+		pImpl->window.close();
 	}
 }

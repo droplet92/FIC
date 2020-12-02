@@ -19,20 +19,29 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\Actor\Actor.h" />
+    <ClInclude Include="src\Actor\ActorTypes.h" />
+    <ClInclude Include="src\Actor\Player.h" />
     <ClInclude Include="src\Component\Button.h" />
+    <ClInclude Include="src\Component\Mouse.h" />
+    <ClInclude Include="src\Factory\ActorFactory.h" />
     <ClInclude Include="src\Game.h" />
     <ClInclude Include="src\GameObject.h" />
     <ClInclude Include="src\GameScene\GameScene.h" />
-    <ClInclude Include="src\GameScene\GameScenes.h" />
     <ClInclude Include="src\GameScene\IntroScene.h" />
     <ClInclude Include="src\GameScene\OutroScene.h" />
     <ClInclude Include="src\GameScene\PlayingScene.h" />
     <ClInclude Include="src\GameScene\TitleScene.h" />
-    <ClInclude Include="src\TextureManager.h" />
+    <ClInclude Include="src\Manager\TextureManager.h" />
+    <ClInclude Include="src\MouseState.h" />
+    <ClInclude Include="src\TextureAttribute.h" />
+    <ClInclude Include="src\Time.h" />
+    <ClInclude Include="src\Stopwatch.h" />
     <ClInclude Include="src\Window.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Component\Button.cpp" />
+    <ClCompile Include="src\Component\Mouse.cpp" />
     <ClCompile Include="src\Game.cpp" />
     <ClCompile Include="src\GameObject.cpp" />
     <ClCompile Include="src\GameScene\GameScene.cpp" />
@@ -41,6 +50,9 @@
     <ClCompile Include="src\GameScene\PlayingScene.cpp" />
     <ClCompile Include="src\GameScene\TitleScene.cpp" />
     <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\Manager\TextureManager.cpp" />
+    <ClCompile Include="src\MouseState.cpp" />
+    <ClCompile Include="src\Stopwatch.cpp" />
     <ClCompile Include="src\Window.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

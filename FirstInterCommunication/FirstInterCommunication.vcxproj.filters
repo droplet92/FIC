@@ -25,6 +25,18 @@
     <Filter Include="소스 파일\Component">
       <UniqueIdentifier>{2a6f2045-5419-4cdd-a92f-98ada1a8ce12}</UniqueIdentifier>
     </Filter>
+    <Filter Include="헤더 파일\Factory">
+      <UniqueIdentifier>{aca13d64-60d7-46e0-a602-da67f19d9474}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Manager">
+      <UniqueIdentifier>{4ea0b105-288a-4ac2-a099-2adc3d3bcc69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="헤더 파일\Actor">
+      <UniqueIdentifier>{352a45d5-4457-4547-ba30-7ec05d41791d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Manager">
+      <UniqueIdentifier>{fa140e40-0371-4546-8037-3be56d6e47da}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Game.h">
@@ -33,14 +45,8 @@
     <ClInclude Include="src\GameObject.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="src\TextureManager.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
     <ClInclude Include="src\Window.h">
       <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="src\GameScene\GameScene.h">
-      <Filter>헤더 파일\GameScene</Filter>
     </ClInclude>
     <ClInclude Include="src\GameScene\TitleScene.h">
       <Filter>헤더 파일\GameScene</Filter>
@@ -57,7 +63,37 @@
     <ClInclude Include="src\GameScene\OutroScene.h">
       <Filter>헤더 파일\GameScene</Filter>
     </ClInclude>
-    <ClInclude Include="src\GameScene\GameScenes.h">
+    <ClInclude Include="src\Time.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Stopwatch.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Factory\ActorFactory.h">
+      <Filter>헤더 파일\Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Actor\Actor.h">
+      <Filter>헤더 파일\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Actor\ActorTypes.h">
+      <Filter>헤더 파일\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Actor\Player.h">
+      <Filter>헤더 파일\Actor</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Manager\TextureManager.h">
+      <Filter>헤더 파일\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TextureAttribute.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Component\Mouse.h">
+      <Filter>헤더 파일\Component</Filter>
+    </ClInclude>
+    <ClInclude Include="src\MouseState.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameScene\GameScene.h">
       <Filter>헤더 파일\GameScene</Filter>
     </ClInclude>
   </ItemGroup>
@@ -89,7 +125,19 @@
     <ClCompile Include="src\GameScene\PlayingScene.cpp">
       <Filter>소스 파일\GameScene</Filter>
     </ClCompile>
+    <ClCompile Include="src\Stopwatch.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Manager\TextureManager.cpp">
+      <Filter>소스 파일\Manager</Filter>
+    </ClCompile>
     <ClCompile Include="src\GameScene\OutroScene.cpp">
+      <Filter>소스 파일\GameScene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Component\Mouse.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="src\MouseState.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

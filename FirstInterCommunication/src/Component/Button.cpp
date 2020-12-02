@@ -7,9 +7,11 @@ namespace Component
 		Listener listener = [] {};
 	};
 
-	Button::Button()
-		: pImpl(new Impl)
+	Button::Button(Texture::TextureAttribute textureAttribute, const sf::Vector2f& pos)
+		: GameObject(textureAttribute)
+		, pImpl(new Impl)
 	{
+		setPosition(pos);
 	}
 
 	Button::~Button() = default;
@@ -20,8 +22,14 @@ namespace Component
 		pImpl->listener = [=] { current(); listener(); };
 	}
 
-	void Button::click()
+	void Button::onFocus()
+	{
+		setHighlight();
+	}
+
+	void Button::onClick()
 	{
 		pImpl->listener();
 	}
 }
+		

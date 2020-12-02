@@ -4,10 +4,12 @@
 
 namespace FIC
 {
+	class Game;
+
 	class TitleScene : public GameScene
 	{
 	public:
-		TitleScene();
+		TitleScene(Game& game);
 		~TitleScene() final;
 
 	private:

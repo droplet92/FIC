@@ -1,4 +1,5 @@
 #include "OutroScene.h"
+#include "../Game.h"
 
 namespace FIC
 {
@@ -6,7 +7,9 @@ namespace FIC
 	{
 	};
 
-	OutroScene::OutroScene()
+	OutroScene::OutroScene(Game& game)
+		: GameScene(game)
+		, pImpl(new Impl)
 	{
 	}
 

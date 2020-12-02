@@ -1,14 +1,17 @@
 #pragma once
+#include "../GameObject.h"
 
 namespace FIC
 {
 	class Game;
 
-	class GameScene
+	class GameScene : public GameObject
 	{
 	public:
+		GameScene(Game& game);
 		virtual ~GameScene() = 0;
 
-		void changeScene(Game& game);
+	protected:
+		Game& game;
 	};
 }

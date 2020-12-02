@@ -1,5 +1,7 @@
 #pragma once
 #include <memory>
+#include "Time.h"
+#include "GameScene/GameScene.h"
 
 namespace FIC
 {
@@ -10,8 +12,13 @@ namespace FIC
 		~Game();
 
 		void run();
-		void update();
+
+		void processInput();
+		void update(Time::time_ms dt);
 		void draw();
+
+		void changeScene(GameScene* gameScene);
+		void exit() const;
 
 	private:
 		struct Impl;
